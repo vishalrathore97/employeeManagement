@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.pagination__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.pagination__btnList {
+  background: #fff;
+  border: 2px solid #666;
+  padding: 8px 8px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
+.active {
+  border: 1px solid #888;
+  color: #888;
+  background-color: teal;
+  pointer-events: none;
+}

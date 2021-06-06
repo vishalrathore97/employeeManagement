@@ -1,0 +1,96 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+.userInfo__btnContainer {
+  display: flex;
+}
+.userInfo__name {
+  min-width: 200px;
+}
+.userInfo__btn {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  min-width: 100px;
+  padding: 10px;
+  margin: 5px 8px;
+}
+.userInfo__btn--red {
+  background-color: #dc3545;
+}
+.userInfo__btn--yellow {
+  background-color: rgb(206, 188, 31);
+}
+.userInfo__btn--blue {
+  background-color: rgb(23, 162, 184);
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  height: 40%;
+  left: 30%;
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.modal__title {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+.modal__body {
+  margin: 0;
+  flex: 1;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+}
+.modal__btn {
+  padding: 10px;
+  margin: 10pxpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal__btn--danger {
+  padding: 8px;
+  background-color: #dc3545;
+  border-radius: 5px;
+  margin-right: 5px;
+  min-width: 80px;
+  cursor: pointer;
+}
+.modal__btn--primary {
+  padding: 8px;
+  background-color: rgb(23, 162, 184);
+  border-radius: 5px;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(185, 185, 193);
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 1000ms ease;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
