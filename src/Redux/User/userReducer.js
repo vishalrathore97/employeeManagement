@@ -62,7 +62,10 @@ const userReducer = (state = initialState, action) => {
     case SAVE_USER_SUCCESS:
       return {
         ...state,
-        users: [...state.users, action.payload],
+        users: [
+          ...state.users,
+          { ...action.payload, id: state.users.length + 1 },
+        ],
         loadSave: false,
       };
     case SAVE_USER_FAILURE:

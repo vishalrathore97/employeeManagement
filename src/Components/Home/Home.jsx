@@ -44,7 +44,7 @@ class Home extends Component {
     const { loading, users } = this.props;
     const { filteredData } = this.state;
     let debounce = this.debounceSearch();
-
+    console.log(filteredData);
     return (
       <>
         {loading ? (
